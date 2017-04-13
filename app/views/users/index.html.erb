@@ -1,0 +1,8 @@
+<h1>Users</h1>
+<% @users.each do |user| %>
+  <h2><%= user.email %></h2>
+  <% if user.avatar_url %>
+    <%= image_tag user.avatar_url %>
+  <% end %>
+  <hr/>
+<% end %>

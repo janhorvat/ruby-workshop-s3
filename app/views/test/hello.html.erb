@@ -1,0 +1,5 @@
+<h1>Hello <%= @what %>!</h1>
+<p><%= params.inspect %></p>
+
+<%= link_to "Users", users_path %>
+<%= link_to "Logout", destroy_user_session_path, method: :delete %>
